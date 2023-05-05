@@ -1,28 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { useSelector } from "react-redux";
+import "./App.scss";
+// import { useSelector } from "react-redux";
+import { Route, Routes } from "react-router-dom";
+import Landing from "./pages/Landing/Landing.jsx";
+import MobileAuth from "./pages/mobileAuth/MobileAuth.jsx";
 
-function App() {
-  const value = useSelector((state) => state);
-  console.log(value);
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/home" element={<Landing />} />
+        <Route path="/" element={<Landing />} />
+        {/* <Route path="/auth" element={<MobileAuth />} /> */}
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
