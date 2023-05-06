@@ -1,0 +1,59 @@
+.readywid_wrapper {
+  width: 331.98px;
+  height: 380px;
+  border-radius: 84px;
+  background: #f6edda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2.2rem;
+  @media screen and (max-width: 1005px) {
+    width: 100%;
+    height: fit-content;
+    gap: 2rem;
+  }
+  .readywid_text1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+    margin-top: 4rem;
+  }
+  .readywid_text2 {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .readywid_button {
+    cursor: pointer;
+    border: 1px solid #20ad96;
+    border-radius: 10px;
+    background-color: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #20ad96;
+    margin-bottom: 3rem;
+    transition: color 0.5s ease-in-out;
+    &:hover {
+      background-color: #20ad96;
+      color: #f6edda;
+    }
+  }
+}

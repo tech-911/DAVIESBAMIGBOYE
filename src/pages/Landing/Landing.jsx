@@ -4,6 +4,8 @@ import "./landing.scss";
 import Header from "../../components/Header/Header";
 import Mission from "../../components/mission/Mission";
 import Support from "../../components/support/Support";
+import Ready from "../../components/Ready/Ready";
+import Footer from "../../components/footer/Footer";
 
 const Landing = () => {
   return (
@@ -12,6 +14,8 @@ const Landing = () => {
       <Header />
       <Mission />
       <Support />
+      <Ready />
+      <Footer />
     </div>
   );
 };
