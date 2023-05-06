@@ -1,0 +1,241 @@
+@mixin socials_wrap {
+  width: 36.39px;
+  height: 36.39px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.subscribe_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #f2f0ea;
+  padding: 3rem 3rem 6rem;
+  @media screen and (max-width: 420px) {
+    padding: 2rem 1rem 4rem !important;
+  }
+  @media screen and (max-width: 1021px) {
+    flex-direction: column-reverse;
+  }
+  .subscribe_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 538px;
+    @media screen and (max-width: 1021px) {
+      align-items: center;
+      width: 100%;
+    }
+    .subscribe_newsletter {
+      width: 201.61px;
+      height: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+      color: #222222;
+    }
+    .subscribe_text1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 84px;
+      line-height: 79px;
+      letter-spacing: -4.7px;
+      color: #222222;
+      @media screen and (max-width: 1021px) {
+        font-size: 42px;
+        letter-spacing: -2.3px;
+        line-height: 0.94em;
+        text-align: center;
+      }
+    }
+    .subscribe_text2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 33px;
+      color: #696969;
+      margin-top: 1rem;
+      @media screen and (max-width: 1021px) {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+    .subscribe_social_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      @media screen and (max-width: 1021px) {
+        align-items: center;
+      }
+      .subscribe_socials {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        .subscribe_facebook {
+          @include socials_wrap;
+          cursor: pointer;
+          &:hover {
+            background-color: #2a344f;
+            .subscribe_facebook_icon {
+              color: white;
+            }
+          }
+          .subscribe_facebook_icon {
+            color: #2a344f;
+            font-size: 18px;
+          }
+        }
+        .subscribe_twitter {
+          @include socials_wrap;
+          cursor: pointer;
+          &:hover {
+            background-color: #2a344f;
+            .subscribe_twitter_icon {
+              color: white;
+            }
+          }
+          .subscribe_twitter_icon {
+            color: #2a344f;
+            font-size: 18px;
+          }
+        }
+        .subscribe_google {
+          @include socials_wrap;
+          cursor: pointer;
+          &:hover {
+            background-color: #2a344f;
+            .subscribe_google_icon {
+              color: white;
+            }
+          }
+          .subscribe_google_icon {
+            color: #2a344f;
+            font-size: 18px;
+          }
+        }
+        .subscribe_instagram {
+          @include socials_wrap;
+          cursor: pointer;
+          &:hover {
+            background-color: #2a344f;
+            .subscribe_instagram_icon {
+              color: white;
+            }
+          }
+          .subscribe_instagram_icon {
+            color: #2a344f;
+            font-size: 18px;
+          }
+        }
+      }
+      .subscribe_follow {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.63);
+      }
+    }
+    .subscribe_input_wrap {
+      margin-top: 2rem;
+      position: relative;
+      width: 100%;
+      @media screen and (max-width: 1021px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .subscribe_input {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 19px 24px 20.55px;
+        background: #ffffff;
+        border-radius: 12px 44px 44px 12px;
+        @media screen and (max-width: 1021px) {
+          width: 100%;
+          border-radius: 12px;
+        }
+        .subscribe_input_field {
+          border: none;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 20px;
+          color: #2a344f;
+          outline: none;
+          @media screen and (max-width: 1021px) {
+            width: 100%;
+          }
+          &::placeholder {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            color: #2a344f;
+          }
+        }
+      }
+      .subscribe_button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 181.63px;
+        height: 76px;
+        right: 0px;
+        top: -9px;
+        background: #50535d;
+        border-radius: 44px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+        @media screen and (max-width: 1021px) {
+          position: unset;
+          font-size: 14px;
+          line-height: 10px;
+          text-align: center;
+          width: 100%;
+          height: 50px;
+        }
+      }
+    }
+  }
+  .subscribe_right {
+    width: 40%;
+    height: auto;
+  }
+}

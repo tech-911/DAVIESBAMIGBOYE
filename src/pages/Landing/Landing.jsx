@@ -6,6 +6,7 @@ import Mission from "../../components/mission/Mission";
 import Support from "../../components/support/Support";
 import Ready from "../../components/Ready/Ready";
 import Footer from "../../components/footer/Footer";
+import Subscribe from "../../components/subscribe/Subscribe";
 
 const Landing = () => {
   return (
@@ -15,6 +16,7 @@ const Landing = () => {
       <Mission />
       <Support />
       <Ready />
+      <Subscribe />
       <Footer />
     </div>
   );
