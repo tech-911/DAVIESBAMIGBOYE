@@ -1,0 +1,35 @@
+.counter_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   gap: 1.5rem;
+  .counter_number {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 74px;
+    letter-spacing: -4px;
+    color: #ffffff;
+    @media (max-width: 1024px) {
+      font-size: 51px;
+      line-height: 50px;
+    }
+  }
+  .counter_text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    @media (max-width: 1024px) {
+      font-size: 12px;
+      letter-spacing: 1.3px;
+      line-height: 2.5;
+    }
+  }
+}

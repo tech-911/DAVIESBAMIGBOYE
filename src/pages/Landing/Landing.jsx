@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../../components/nav/Nav";
 import "./landing.scss";
 import Header from "../../components/Header/Header";
 import Mission from "../../components/mission/Mission";
+import Support from "../../components/support/Support";
 
 const Landing = () => {
   return (
@@ -10,6 +11,7 @@ const Landing = () => {
       {/* <Nav /> */}
       <Header />
       <Mission />
+      <Support />
     </div>
   );
 };

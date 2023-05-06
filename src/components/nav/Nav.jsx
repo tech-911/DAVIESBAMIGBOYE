@@ -11,7 +11,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { GrFormClose, GrFacebookOption } from "react-icons/gr";
 const Nav = () => {
   const [navDrop, setNavDrop] = useState(0);
-  console.log(navDrop);
+  
   return (
     <div className={`nav_wrapper ${navDrop ? "nav_wrapper_white" : ""}`}>
       <div className="nav_left">
