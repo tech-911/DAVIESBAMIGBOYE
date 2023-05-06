@@ -3,6 +3,7 @@ import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing/Landing.jsx";
 import MobileAuth from "./pages/mobileAuth/MobileAuth.jsx";
+import { useEffect } from "react";
 
 const App = () => {
   return (
