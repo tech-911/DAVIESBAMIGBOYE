@@ -1,0 +1,250 @@
+@mixin contact_info_left {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+}
+@mixin contact_info_right {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #897f7f;
+}
+
+@mixin formText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  //   text-transform: uppercase;
+  color: #444444;
+}
+
+@mixin formInputBorder {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  &:focus {
+    border: 2px solid black;
+  }
+}
+
+.contact_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url(https://themes.pixelwars.org/efor/demo-09/wp-content/uploads/sites/13/2022/11/colin-lloyd-YDPZXpDQCIM-unsplash-scaled.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  @media screen and (min-width: 1025px) {
+    background-attachment: fixed;
+  }
+
+  .contact_nav {
+    width: 100%;
+    z-index: 1;
+  }
+  .contact_overlay {
+    background-color: rgba(0, 0, 0, 0.315);
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 91px;
+    z-index: 0;
+  }
+  .contact_body {
+    background: #f7f3e8;
+    border-radius: 84px 84px 0px 0px;
+    width: 729.59px;
+    margin-top: 8rem;
+    margin-left: 6rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 930px) {
+      margin-left: unset;
+      align-self: center;
+    }
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 521px) {
+      padding: 2rem;
+      border-radius: 30px 30px 0px 0px;
+    }
+    .contact_head1 {
+      align-self: flex-start;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .contact_head2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 84px;
+      line-height: 79px;
+      letter-spacing: -4.7px;
+      color: #222222;
+      align-self: flex-start;
+      margin-top: 1rem;
+      @media screen and (max-width: 1024px) {
+        font-size: 60px;
+        letter-spacing: -3.3px;
+        line-height: 0.94em;
+      }
+      @media screen and (max-width: 486px) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+    .contact_info_wrap {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 90%;
+      align-self: flex-start;
+      @media screen and (max-width: 630px) {
+        flex-direction: column;
+      }
+
+      .contact_info_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        * {
+          @include contact_info_left;
+        }
+      }
+      .contact_info_right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        * {
+          @include contact_info_right;
+        }
+      }
+    }
+    .contact_mid_text {
+      align-self: flex-start;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: #222222;
+      margin-top: 2rem;
+    }
+    .contact_form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+      margin-top: 1.5rem;
+      .contact_form_item1_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 2rem;
+        @media screen and (max-width: 521px) {
+            flex-direction: column;
+        }
+        .contact_form_name {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.4rem;
+          height: 84px;
+          .contact_name_input {
+            width: 100%;
+            height: 100%;
+            background-color: unset;
+            padding: 1rem;
+            @include formText;
+          }
+        }
+        .contact_form_email {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.4rem;
+          height: 84px;
+          .contact_email_input {
+            width: 100%;
+            height: 100%;
+            background-color: unset;
+            padding: 1rem;
+            @include formText;
+          }
+        }
+      }
+      .contact_message {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+        width: 100%;
+        .contact_message_input {
+          width: 100%;
+          background-color: unset;
+          padding: 1rem;
+          @include formText;
+        }
+      }
+      .contact_button {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #222222;
+        cursor: pointer;
+        border: 2px solid #222222;
+        background-color: unset;
+        padding: 0.8rem 1.5rem;
+        &:hover {
+          border: 2px solid rgba(0, 0, 255, 0.336);
+          color: rgba(0, 0, 255, 0.336);
+        }
+      }
+    }
+  }
+}
+
+.contact_form_text {
+  @include formText;
+}
+.contact_border {
+  @include formInputBorder;
+}

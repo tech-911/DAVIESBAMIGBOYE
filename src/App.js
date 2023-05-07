@@ -2,8 +2,7 @@ import "./App.scss";
 // import { useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing/Landing.jsx";
-import MobileAuth from "./pages/mobileAuth/MobileAuth.jsx";
-import { useEffect } from "react";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   return (
@@ -11,7 +10,7 @@ const App = () => {
       <Routes>
         <Route path="/home" element={<Landing />} />
         <Route path="/" element={<Landing />} />
-        {/* <Route path="/auth" element={<MobileAuth />} /> */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
