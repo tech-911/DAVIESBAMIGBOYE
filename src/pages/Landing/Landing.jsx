@@ -9,6 +9,7 @@ import Footer from "../../components/footer/Footer";
 import Subscribe from "../../components/subscribe/Subscribe";
 import Access from "../../components/access/Access";
 import Article from "../../components/article/Article";
+import Courses from "../../components/courses/Courses";
 
 const Landing = () => {
   return (
@@ -18,6 +19,7 @@ const Landing = () => {
       <Mission />
       <Support />
       <Ready />
+      <Courses />
       <Access />
       <Article />
       <Subscribe />

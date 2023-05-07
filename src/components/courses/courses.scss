@@ -1,0 +1,134 @@
+.course_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #f6edda;
+  padding: 6rem 3rem;
+  @media screen and (max-width: 420px) {
+    padding: 3rem 1rem !important;
+  }
+  .course_head {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 79px;
+    text-align: center;
+    letter-spacing: -4.7px;
+    color: #222222;
+    max-width: 90%;
+    margin-bottom: 4rem;
+    @media screen and (max-width: 1099px) {
+      font-size: 60px;
+      line-height: 65px;
+    }
+    @media screen and (max-width: 790px) {
+      font-size: 40px;
+      line-height: 45px;
+      letter-spacing: -2px;
+    }
+    @media screen and (max-width: 787px) {
+      text-align: center;
+    }
+  }
+  .course_carousel {
+    width: 80%;
+    margin-bottom: 6rem;
+  }
+
+  .course_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: fit-content;
+    height: 76px;
+    padding: 0rem 2rem;
+    background: #50535d;
+    border-radius: 100px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    transition: background 0.2s ease-in-out;
+    @media screen and (max-width: 1021px) {
+      font-size: 14px;
+      line-height: 10px;
+      text-align: center;
+      width: fit-content;
+      height: 50px;
+    }
+    &:hover {
+      background: black;
+      cursor: pointer;
+      color: white;
+      .course_button_icon {
+        color: white;
+      }
+    }
+    .course_button_icon {
+      font-size: 19px;
+      color: white;
+    }
+  }
+}
+
+.course_carousel_item {
+  width: 100%;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  @media screen and (max-width: 1208px) {
+    padding: 0rem 0.5rem;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px !important; /* set the width of the buttons */
+  height: 50px !important; /* set the height of the buttons */
+  background: rgba(4, 19, 54, 0.05) !important;
+  border-radius: 16px !important;
+  opacity: 0.8; /* set the opacity of the buttons */
+}
+
+.slick-next {
+  right: -51px !important;
+}
+.slick-prev {
+  left: -51px !important;
+}
+
+.slick-prev:before {
+  content: url("../../assets/png/carousel_arrows/left.png") !important; /* set the content of the left arrow */
+  color: black !important;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.slick-next:before {
+  content: url("../../assets/png/carousel_arrows/right.png") !important; /* set the content of the right arrow */
+  color: black !important;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 1; /* set the opacity of the buttons on hover */
+}
