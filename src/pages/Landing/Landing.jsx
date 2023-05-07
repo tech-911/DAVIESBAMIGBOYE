@@ -8,6 +8,7 @@ import Ready from "../../components/Ready/Ready";
 import Footer from "../../components/footer/Footer";
 import Subscribe from "../../components/subscribe/Subscribe";
 import Access from "../../components/access/Access";
+import Article from "../../components/article/Article";
 
 const Landing = () => {
   return (
@@ -18,6 +19,7 @@ const Landing = () => {
       <Support />
       <Ready />
       <Access />
+      <Article />
       <Subscribe />
       <Footer />
     </div>

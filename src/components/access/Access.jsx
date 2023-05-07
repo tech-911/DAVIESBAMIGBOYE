@@ -1,5 +1,6 @@
 import React from "react";
 import "./access.scss";
+import { FaGraduationCap } from "react-icons/fa";
 
 const Access = () => {
   return (
@@ -13,6 +14,10 @@ const Access = () => {
           cold, dead finger. I don't know what you did, Fry, but once again, you
           screwed up!
         </p>
+        <button className="access_button">
+          <FaGraduationCap className="access_button_icon"/>
+          Start for Free
+        </button>
       </div>
     </div>
   );

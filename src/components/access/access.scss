@@ -72,5 +72,46 @@
       text-align: center;
       color: rgba(255, 255, 255, 0.78);
     }
+    .access_button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      width: fit-content;
+      height: 76px;
+      padding: 0rem 2rem;
+      background: #ffef9d;
+      border-radius: 100px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.7px;
+      color: black;
+      border: none;
+      transition: background 0.2s ease-in-out;
+      @media screen and (max-width: 1021px) {
+        font-size: 14px;
+        line-height: 10px;
+        text-align: center;
+        width: fit-content;
+        height: 50px;
+      }
+      &:hover {
+        background: black;
+        cursor: pointer;
+        color: white;
+        .access_button_icon {
+          color: white;
+        }
+      }
+      .access_button_icon {
+        font-size: 19px;
+        color: #000000;
+      }
+    }
   }
 }
