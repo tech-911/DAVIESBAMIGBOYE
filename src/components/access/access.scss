@@ -1,0 +1,76 @@
+.access_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://themes.pixelwars.org/efor/demo-09/wp-content/uploads/sites/13/2019/05/d9d1ff99-ff23-4f59-bf3s0-edd6a218ef68-1920.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 708.47px;
+  width: 100%;
+  position: relative;
+  padding: 0rem 3rem;
+  @media screen and (max-width: 420px) {
+    padding: 0rem 1rem !important;
+  }
+  @media (min-width: 1025px) {
+    background-attachment: fixed;
+  }
+  .access_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #444745;
+    opacity: 0.6;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+  .access_notes {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    gap: 1.6rem;
+    .access_text1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff24f;
+    }
+    .access_text2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 84px;
+      line-height: 79px;
+      text-align: center;
+      letter-spacing: -4.7px;
+      color: #ffffff;
+      @media screen and (max-width: 1024px) {
+        font-size: 60px;
+        letter-spacing: -3.3px;
+        line-height: 0.94em;
+      }
+      @media screen and (max-width: 486px) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+    .access_text3 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.78);
+    }
+  }
+}

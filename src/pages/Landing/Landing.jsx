@@ -7,6 +7,7 @@ import Support from "../../components/support/Support";
 import Ready from "../../components/Ready/Ready";
 import Footer from "../../components/footer/Footer";
 import Subscribe from "../../components/subscribe/Subscribe";
+import Access from "../../components/access/Access";
 
 const Landing = () => {
   return (
@@ -16,6 +17,7 @@ const Landing = () => {
       <Mission />
       <Support />
       <Ready />
+      <Access />
       <Subscribe />
       <Footer />
     </div>
