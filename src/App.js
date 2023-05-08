@@ -3,6 +3,7 @@ import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing/Landing.jsx";
 import Contact from "./pages/Contact/Contact";
+import Shop from "./pages/Shop/Shop";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Route path="/home" element={<Landing />} />
         <Route path="/" element={<Landing />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </div>
   );

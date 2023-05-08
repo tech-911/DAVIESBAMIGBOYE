@@ -28,7 +28,7 @@ const Nav = () => {
     } else if (pathname.includes("contact")) {
       setActive("contact");
     }
-  });
+  }, [pathname]);
 
   return (
     <div className={`nav_wrapper ${navDrop ? "nav_wrapper_white" : ""}`}>
@@ -72,7 +72,7 @@ const Nav = () => {
           Blog
         </Link>
         <Link
-          to="/"
+          to="/shop"
           className={`nav_link5 nav_link ${
             active === "shop" ? "nav_link_active" : ""
           }`}
@@ -147,7 +147,7 @@ const Nav = () => {
           Blog
         </Link>
         <div className="navres_border"></div>
-        <Link to="/" className="navres_link5 navres_link">
+        <Link to="/shop" className="navres_link5 navres_link">
           Shop
         </Link>
         <div className="navres_border"></div>

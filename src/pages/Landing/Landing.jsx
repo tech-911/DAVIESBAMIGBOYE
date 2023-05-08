@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Nav from "../../components/nav/Nav";
+// import Nav from "../../components/nav/Nav";
 import "./landing.scss";
 import Header from "../../components/Header/Header";
 import Mission from "../../components/mission/Mission";

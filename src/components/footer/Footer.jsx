@@ -1,17 +1,17 @@
 import React from "react";
 import "./footer.scss";
-import foot1 from "../../assets/png/footerimg/1.png";
-import foot2 from "../../assets/png/footerimg/2.png";
-import foot3 from "../../assets/png/footerimg/3.png";
-import foot4 from "../../assets/png/footerimg/4.png";
-import foot5 from "../../assets/png/footerimg/5.png";
-import foot6 from "../../assets/png/footerimg/6.png";
-import foot7 from "../../assets/png/footerimg/7.png";
-import foot8 from "../../assets/png/footerimg/8.png";
-import foot9 from "../../assets/png/footerimg/9.png";
-import foot10 from "../../assets/png/footerimg/10.png";
-import foot11 from "../../assets/png/footerimg/11.png";
-import foot12 from "../../assets/png/footerimg/12.png";
+// import foot1 from "../../assets/png/footerimg/1.png";
+// import foot2 from "../../assets/png/footerimg/2.png";
+// import foot3 from "../../assets/png/footerimg/3.png";
+// import foot4 from "../../assets/png/footerimg/4.png";
+// import foot5 from "../../assets/png/footerimg/5.png";
+// import foot6 from "../../assets/png/footerimg/6.png";
+// import foot7 from "../../assets/png/footerimg/7.png";
+// import foot8 from "../../assets/png/footerimg/8.png";
+// import foot9 from "../../assets/png/footerimg/9.png";
+// import foot10 from "../../assets/png/footerimg/10.png";
+// import foot11 from "../../assets/png/footerimg/11.png";
+// import foot12 from "../../assets/png/footerimg/12.png";
 
 const Footer = () => {
   return (
