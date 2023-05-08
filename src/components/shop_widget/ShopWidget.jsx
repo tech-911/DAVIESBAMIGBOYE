@@ -1,9 +1,10 @@
 import React from "react";
 import "./shop_widget.scss";
-const ShopWidget = ({ img, text1, text2 }) => {
+const ShopWidget = ({ img, text1, text2, status }) => {
   return (
     <div className="shopwid_wrapper">
       <div className="shopwid_image_wrap">
+        {status ? <p className="shopwid_status">SALE</p> : ""}
         <img className="shopwid_img" src={img} alt="shopimg" />
         <div className="shopwid_overlay">
           <button className="shopwid_button">ADD TO CART</button>

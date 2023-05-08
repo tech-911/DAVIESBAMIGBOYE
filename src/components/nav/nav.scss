@@ -77,6 +77,7 @@
       }
     }
     .nav_link {
+      background-color: unset;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -85,6 +86,7 @@
       padding: 0rem 0.5rem;
       color: #ffffff;
       @include nav_link;
+      transition: background-color 0.2s ease-in-out;
       &:hover {
         cursor: pointer;
         background-color: #ffe8a3;
