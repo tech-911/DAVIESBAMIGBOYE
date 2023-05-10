@@ -1,45 +1,41 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./counter.scss";
 
 const Counter = ({ text, fromval, toval, symbol }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(fromval);
+  const counterRef = useRef(null);
+  const hasShown = useRef(false);
+  const interval = useRef(null);
 
   useEffect(() => {
-    let landing = document.querySelector(".landing_wrapper");
-    const spanElement = document.querySelector(".counter_number");
-    const elementTop = spanElement.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    let interval;
-    console.log("element top: ", elementTop);
-    console.log("window height: ", windowHeight);
-    console.log("differnce: ", elementTop < windowHeight);
-    function updateCount() {
-      if (count < toval) {
-        setCount(() => {
-          return count + 1;
-        });
-        console.log(count);
-      }
-      console.log("line23");
+    if (count >= toval) {
+      clearInterval(interval.current);
     }
+  }, [count]);
 
-    // if (elementTop < windowHeight) {
-    //   interval = setInterval(updateCount, 10);
-    //   return () => clearInterval(interval);
-    // }
-
-    function handleScroll() {
-      if (elementTop < windowHeight) {
-        interval = setInterval(updateCount, 10);
-        return () => clearInterval(interval);
+  useEffect(() => {
+    const callback = (arg) => {
+      if (!hasShown.current && arg[0].isIntersecting) {
+        interval.current = setInterval(() => {
+          setCount((state) => state + 1);
+        }, 10);
+        hasShown.current = true;
+        console.log("an if statement");
       }
-    }
 
-    landing.addEventListener("scroll", handleScroll);
-    return () => landing.removeEventListener("scroll", handleScroll);
+      console.log(arg);
+    };
+    let options = {
+      root: document.querySelector(".landing_wrapper"),
+      rootMargin: "0px",
+      threshold: 0.01,
+    };
+
+    let observer = new IntersectionObserver(callback, options);
+    observer.observe(counterRef.current);
   }, []);
   return (
-    <div className="counter_wrapper">
+    <div ref={counterRef} className="counter_wrapper">
       <h1 className="counter_number">{`${count}${symbol}`}</h1>
       <p className="counter_text">{text || "count"}</p>
     </div>

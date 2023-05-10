@@ -1,8 +1,37 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./mission.scss";
 import Davis from "../../assets/png/davis.png";
 
 const Mission = () => {
+  const [count, setCount] = useState(0);
+  const counterRef = useRef(null);
+  const hasShown = useRef(false);
+  const interval = useRef(null);
+
+  useEffect(() => {
+    if (count >= 20) {
+      clearInterval(interval.current);
+    }
+  }, [count]);
+
+  useEffect(() => {
+    const callback = (arg) => {
+      if (!hasShown.current && arg[0].isIntersecting) {
+        interval.current = setInterval(() => {
+          setCount((state) => state + 1);
+        }, 100);
+        hasShown.current = true;
+      }
+    };
+    let options = {
+      root: document.querySelector(".landing_wrapper"),
+      rootMargin: "0px",
+      threshold: 1,
+    };
+
+    let observer = new IntersectionObserver(callback, options);
+    observer.observe(counterRef.current);
+  }, []);
   return (
     <div className="mission_wrapper">
       <div className="mission_container">
@@ -23,8 +52,8 @@ const Mission = () => {
         </div>
         <div className="mission_right">
           <img className="mission_davis" src={Davis} alt="davis" />
-          <div className="mission_davis_year">
-            <p className="mission_no">20</p>
+          <div ref={counterRef} className="mission_davis_year">
+            <p className="mission_no">{count}</p>
             <p className="mission_no_title">Years of Experience</p>
           </div>
         </div>
