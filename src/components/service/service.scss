@@ -1,0 +1,184 @@
+.service_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 3rem 3rem 6rem;
+  @media screen and (max-width: 420px) {
+    padding: 2rem 1rem 4rem !important;
+  }
+  .service_header_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    .service_header_text1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 84px;
+      line-height: 79px;
+      text-align: center;
+      letter-spacing: -4.7px;
+      color: #222222;
+      @media screen and (max-width: 1024px) {
+        font-size: 60px;
+        letter-spacing: -3.3px;
+        line-height: 0.94em;
+      }
+      @media screen and (max-width: 486px) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+    .service_header_text2 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+      color: #919191;
+    }
+  }
+  .service_body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 2rem;
+    @media screen and (max-width: 1020px) {
+      flex-direction: column;
+    }
+    .service_body1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .service_icon1 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+      }
+      .service_text_big1 {
+        margin-bottom: 0.6rem;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+      }
+      .service_small1 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #a0a0a0;
+        max-width: 210px;
+        @media screen and (max-width: 1020px) {
+          max-width: unset;
+        }
+      }
+      .service_icon2 {
+        font-size: 30px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      .service_text_big2 {
+        margin-bottom: 0.6rem;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+      }
+      .service_small2 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #a0a0a0;
+        max-width: 210px;
+        @media screen and (max-width: 1020px) {
+          max-width: unset;
+        }
+      }
+    }
+    .service_body2 {
+      border-radius: 50%;
+      max-width: 100%;
+      height: auto;
+    }
+    .service_body3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .service_icon3 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+      }
+      .service_text_big3 {
+        margin-bottom: 0.6rem;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+      }
+      .service_small3 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #a0a0a0;
+        max-width: 210px;
+        @media screen and (max-width: 1020px) {
+          max-width: unset;
+        }
+      }
+
+      .service_icon4 {
+        font-size: 30px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      .service_text_big4 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 0.6rem;
+      }
+      .service_small4 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #a0a0a0;
+        max-width: 210px;
+        display: block;
+        @media screen and (max-width: 1020px) {
+          max-width: unset;
+        }
+      }
+    }
+  }
+}

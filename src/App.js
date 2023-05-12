@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing/Landing.jsx";
 import Contact from "./pages/Contact/Contact";
 import Shop from "./pages/Shop/Shop";
+import Start from "./pages/Start/Start";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Landing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/start" element={<Start />} />
       </Routes>
     </div>
   );

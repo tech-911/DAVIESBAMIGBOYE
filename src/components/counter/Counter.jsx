@@ -20,10 +20,7 @@ const Counter = ({ text, fromval, toval, symbol }) => {
           setCount((state) => state + 1);
         }, 10);
         hasShown.current = true;
-        console.log("an if statement");
       }
-
-      console.log(arg);
     };
     let options = {
       root: document.querySelector(".landing_wrapper"),

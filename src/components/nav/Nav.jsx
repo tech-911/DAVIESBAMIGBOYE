@@ -25,6 +25,8 @@ const Nav = () => {
       setActive("blog");
     } else if (pathname.includes("shop")) {
       setActive("shop");
+    } else if (pathname.includes("start")) {
+      setActive("start");
     } else if (pathname.includes("contact")) {
       setActive("contact");
     }
@@ -48,7 +50,7 @@ const Nav = () => {
           Home
         </Link>
         <Link
-          to="/"
+          to="/start"
           className={`nav_link2 nav_link ${
             active === "start" ? "nav_link_active" : ""
           }`}
@@ -135,7 +137,7 @@ const Nav = () => {
           Home
         </Link>
         <div className="navres_border"></div>
-        <Link to="/" className="navres_link2 navres_link">
+        <Link to="/start" className="navres_link2 navres_link">
           Start Here
         </Link>
         <div className="navres_border"></div>
