@@ -66,7 +66,7 @@ const Nav = () => {
           Courses
         </Link>
         <Link
-          to="/"
+          to="/blog"
           className={`nav_link4 nav_link ${
             active === "blog" ? "nav_link_active" : ""
           }`}
@@ -145,7 +145,7 @@ const Nav = () => {
           Courses
         </Link>
         <div className="navres_border"></div>
-        <Link to="/" className="navres_link4 navres_link">
+        <Link to="/blog" className="navres_link4 navres_link">
           Blog
         </Link>
         <div className="navres_border"></div>

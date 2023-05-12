@@ -5,6 +5,7 @@ import Landing from "./pages/Landing/Landing.jsx";
 import Contact from "./pages/Contact/Contact";
 import Shop from "./pages/Shop/Shop";
 import Start from "./pages/Start/Start";
+import Blog from "./pages/Blog/Blog";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/start" element={<Start />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   );
